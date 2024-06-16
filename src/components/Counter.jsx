@@ -23,6 +23,11 @@ export default function Counter() {
         setStep((c)=>c+1)
     }
 
+    function restCountStep() {
+        setCount((c)=>0);
+        setStep((s)=>1);
+    }
+
     return(
         <>
             <div className="step-container">
@@ -36,7 +41,7 @@ export default function Counter() {
                 <span>{date.toDateString()}</span>
             </div>
             <div className="reset-btn">
-                <button>Reset</button>
+                <button onClick={restCountStep}>Reset</button>
             </div>
         
         </>
