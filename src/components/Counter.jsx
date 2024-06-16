@@ -35,6 +35,9 @@ export default function Counter() {
                 <span>{count === 0 ? "Today is " : count === 1 ? "1 day from today is " : count === -1 ? "1 day ago was " : count > 1 ? `${count} days from today is ` : `${Math.abs(count)} days ago was `}</span>
                 <span>{date.toDateString()}</span>
             </div>
+            <div className="reset-btn">
+                <button>Reset</button>
+            </div>
         
         </>
     );
